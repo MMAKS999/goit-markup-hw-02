@@ -1,0 +1,192 @@
+
+/* 
+Declaration order
+    Positioning
+    Box model
+    Typographic
+    Visual
+    Misc
+ */
+
+
+
+/* Зміні кольорів */
+:root{
+    --prbrand-color:#4D5AE5;
+    --dark-color:#2E2F42;
+    --success-color:#31D0AA;
+    --text-color:#434455;
+    --subtle-color:#8E8F99;
+    --accent-color:#E7E9FC;
+    --light-color:#F4F4FD;
+}
+
+
+
+body {
+    color:var( --text-color);
+    font-family:'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    background-color:#FFFFFF ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+/* прибирання крапок переліку  */
+.list{
+    list-style: none;
+}
+
+
+
+/* Header */
+.logo-color{
+    color:var(--prbrand-color);
+}
+.logo{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform:uppercase;
+    text-decoration: none;
+}
+/* Виділення логотипу при наведені, зараз розпізнається як 2ва різних елементи і виділяється по одному
+
+
+ЯК ЗРОБИТИ ВИДІЛЕННЯ ВСЬОГО ЛОГОТИПУ ПРИ НАВЕДЕНІ обгорнути ще в div? 
+*/
+.logo:hover,
+.logo-color:hover{
+    color: var(--success-color);
+}
+
+/*header  панель навігації студія-контакт */
+
+.site-nav .link{
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color:var(--dark-color);
+    text-decoration: none;
+    
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:var(--prbrand-color);
+}
+
+.site-nav .link.current{
+    color:var(--prbrand-color);  
+}
+
+.contact-date .contact{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contact:hover,
+.contact:focus{
+    color:var(--prbrand-color);    
+}
+
+
+/* main */
+.hero{
+    text-align: center;
+}
+
+.hero-title{
+    color:var(--dark-color) ;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    text-transform:capitalize;
+}
+
+
+
+
+/* заголовок який потрібно приховати */
+.service-title{
+    color: var(--light-color);
+}
+
+.service{
+    text-align: left; 
+}
+.servic-subh{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2; 
+    text-transform:capitalize;
+    color:var(--dark-color);
+}
+
+/* ситлі для секцій  при потребі попередню теж можна обєднати*/
+
+.wedoing,
+.our-team{
+    text-align: center;
+}
+
+
+.section-title{
+    color:var(--dark-color) ;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.12;
+    text-transform:capitalize;   
+}
+
+.section-subh{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2; 
+    text-transform:capitalize;
+    color:var(--dark-color); 
+    
+}
+
+/* футер зміна кольорів */
+footer{
+background-color:var(--dark-color);
+color:var(--accent-color) ;
+}
+
+.logo-footer{
+    color:var(--light-color);
+}
+
+ /* Button Filter */
+button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;   
+    font-family: inherit;
+    background-color:var(--accent-color);
+    color:var(--prbrand-color);
+    letter-spacing:0.04em;
+    cursor:pointer;
+    
+}
+
+button:hover,
+button:focus{
+    background-color:var(--prbrand-color); 
+    color: var(--accent-color);
+}
+ 
+
+
+
+
+
+/* індивідуальні стилі портфоліо  */
+
+.portfolio-list{
+    text-align: left;
+}
